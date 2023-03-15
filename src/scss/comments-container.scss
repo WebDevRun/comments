@@ -1,0 +1,61 @@
+.comments-container {
+  margin-top: 15px;
+}
+
+.comment {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__top-board,
+  &__bottom-board {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__top-board {
+    font-size: 1rem;
+  }
+
+  &__user-name {
+    font-weight: 700;
+  }
+
+  &__text,
+  &__bottom-board {
+    margin-top: 5px;
+  }
+
+  &__text {
+    line-height: 1.4;
+  }
+
+  &__like {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+
+    svg path {
+      fill: rgb(255, 255, 255);
+    }
+
+    &:hover {
+      background-color: rgb(237, 237, 237);
+    }
+  }
+
+  &__remove {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+
+    &:hover {
+      background-color: rgb(237, 237, 237);
+    }
+  }
+}

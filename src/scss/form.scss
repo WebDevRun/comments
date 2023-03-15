@@ -1,0 +1,79 @@
+@use './fonts.scss';
+
+.form {
+  padding: 15px;
+  font-family: fonts.$Roboto;
+  background-color: rgb(237, 237, 237);
+
+  &__text,
+  &__user-name,
+  &__date,
+  &__submit {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__text,
+  &__user-name,
+  &__date {
+    &:focus {
+      box-shadow: 0 0 2px 2px rgb(150, 188, 242);
+    }
+  }
+
+  &__user-name,
+  &__date {
+    height: 100%;
+  }
+
+  &__text {
+    width: 100%;
+    resize: none;
+  }
+
+  &__bottom-board {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__about {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__user-name {
+    flex: 1 1 70%;
+  }
+
+  &__submit {
+    background-color: rgb(73, 73, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: rgb(37, 56, 255);
+    }
+  }
+
+  // &__text-wrapper,
+  // &__user-name-wrapper,
+  // &__date-wrapper {
+  //   position: relative;
+  // }
+
+  &__error-message {
+    // position: absolute;
+    // left: 0;
+    font-size: 0.8rem;
+    color: rgb(255, 57, 57);
+  }
+}
