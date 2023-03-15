@@ -31,7 +31,7 @@ function createBottomBoard(like) {
   bottomBoard.classList.add('comment__bottom-board')
 
   const likeContainer = document.createElement('div')
-  likeContainer.id = 'like'
+  likeContainer.setAttribute('data-control', 'like')
   likeContainer.classList.add('comment__like')
   likeContainer.innerHTML = `
   <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ function createBottomBoard(like) {
   }
 
   const remove = document.createElement('div')
-  remove.id = 'remove'
+  remove.setAttribute('data-control', 'remove')
   remove.classList.add('comment__remove')
 
   const removeIcon = document.createElement('img')

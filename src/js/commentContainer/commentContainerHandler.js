@@ -15,12 +15,12 @@ export function commentContainerHandler(event) {
 
   if (!targetElement) return
 
-  if (targetElement.id === 'remove') {
+  if (targetElement.dataset.control === 'remove') {
     removeComment(targetElement)
     return
   }
 
-  if (targetElement.id === 'like') {
+  if (targetElement.dataset.control === 'like') {
     toggleLike(targetElement)
     return
   }
