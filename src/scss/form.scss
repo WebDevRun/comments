@@ -49,10 +49,6 @@
     gap: 10px;
   }
 
-  &__user-name {
-    flex: 1 1 70%;
-  }
-
   &__submit {
     background-color: rgb(73, 73, 255);
     color: rgb(255, 255, 255);
@@ -64,16 +60,29 @@
     }
   }
 
-  // &__text-wrapper,
-  // &__user-name-wrapper,
-  // &__date-wrapper {
-  //   position: relative;
-  // }
-
   &__error-message {
-    // position: absolute;
-    // left: 0;
     font-size: 0.8rem;
     color: rgb(255, 57, 57);
+  }
+}
+
+@media (max-width: 580px) {
+  .form {
+    &__bottom-board {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .form {
+    &__about {
+      flex-direction: column;
+    }
+
+    &__user-name,
+    &__date {
+      width: 100%;
+    }
   }
 }
