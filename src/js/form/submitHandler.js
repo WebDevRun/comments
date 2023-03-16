@@ -38,7 +38,6 @@ export function formSubmitHandler(event) {
   }
 
   const comment = createCommentObject(event.target)
-  console.log(comment)
   commentList.push(comment)
 
   for (const subscriber of submitSubscribers) {
